@@ -11,6 +11,11 @@ module.exports = app => {
     return context.github.issues.createComment(issueComment)
   })
 
+  // app.on('issues.opened', async context => {
+  //   const issueComment = context.issue({ body: 'Thanks for opening this issue!' })
+  //   return context.github.issues.createComment(issueComment)
+  // })
+
   // For more information on building apps:
   // https://probot.github.io/docs/
 
